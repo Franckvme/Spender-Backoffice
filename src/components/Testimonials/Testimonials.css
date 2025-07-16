@@ -1,0 +1,153 @@
+.testimonials-section {
+  padding: 80px 16px;
+  background-color: white;
+}
+
+.testimonials-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.testimonials-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.testimonials-description {
+  font-size: 20px;
+  color: #6b7280;
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, #f9fafb, #ffffff);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.testimonial-rating {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.testimonial-star {
+  width: 20px;
+  height: 20px;
+  color: #fbbf24;
+  fill: currentColor;
+}
+
+.testimonial-content {
+  color: #374151;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+.testimonial-role {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.testimonials-cta {
+  text-align: center;
+}
+
+.testimonials-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background-color: #ecfdf5;
+  color: #065f46;
+  font-weight: 500;
+}
+
+.testimonials-cta-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  margin-right: 12px;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .testimonials-title {
+    font-size: 48px;
+  }
+  
+  .testimonials-section {
+    padding: 80px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .testimonials-section {
+    padding: 80px 32px;
+  }
+}

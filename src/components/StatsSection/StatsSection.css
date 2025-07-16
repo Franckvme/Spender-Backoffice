@@ -1,0 +1,123 @@
+stats-section {
+  padding: 80px 16px;
+  background: linear-gradient(135deg, #26cf80, #1f63bb);
+}
+
+.stats-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.stats-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.stats-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.stats-description {
+  font-size: 20px;
+  color: #6b7280;
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.stats-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.stats-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px auto;
+}
+
+.stats-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.stats-label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.stats-description-text {
+  color: #6b7280;
+}
+
+.stats-trust {
+  text-align: center;
+}
+
+.stats-trust-text {
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.stats-trust-brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  opacity: 0.6;
+}
+
+.stats-trust-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #9ca3af;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .stats-title {
+    font-size: 48px;
+  }
+  
+  .stats-section {
+    padding: 80px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-section {
+    padding: 80px 32px;
+  }
+}
